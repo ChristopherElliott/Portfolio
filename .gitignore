@@ -10,3 +10,6 @@
 /SeparatedConcerns/SeparatedConcerns.Shared/obj
 /SeparatedConcerns/SeparatedConcerns.WebClient/bin
 /SeparatedConcerns/SeparatedConcerns.WebClient/obj
+/SeparatedConcerns/SeparatedConcerns.Repository/bin
+/SeparatedConcerns/SeparatedConcerns.Logic/bin
+/SeparatedConcerns/SeparatedConcerns.RestApi/bin
