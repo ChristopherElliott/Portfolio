@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using AutoMapper;
+using SeparatedConcerns.Shared.Model; 
 
 namespace SeparatedConcerns.RestApi
 {
@@ -19,6 +21,9 @@ namespace SeparatedConcerns.RestApi
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+
+            Mapper.Initialize(cfg => cfg.CreateMap<ServiceModel.User, User>());
         }
     }
 }

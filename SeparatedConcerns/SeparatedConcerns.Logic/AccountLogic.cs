@@ -24,19 +24,10 @@ namespace SeparatedConcerns.Logic
         public User Login(string username, string clearText)
         {
             var user = _userRepository.GetUserForLogin(username); 
-            var hashUtility = new PasswordHash(user.Salt); 
+            var hashUtility = new PasswordHash(user.HashedPassword); 
 
             if (!hashUtility.Verify(clearText))
-                throw new UserMistakeException(Constants.UserLoginFailed)
-            {
-
-            }
-            else
-            {
-
-            }
-
-
+                throw new UserMistakeException(Constants.UserLoginFailed); 
 
             return user; 
         }
