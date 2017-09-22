@@ -13,3 +13,8 @@
 /SeparatedConcerns/SeparatedConcerns.Repository/bin
 /SeparatedConcerns/SeparatedConcerns.Logic/bin
 /SeparatedConcerns/SeparatedConcerns.RestApi/bin
+/SeparatedConcerns/SeparatedConcerns.RestApi/obj
+/SeparatedConcerns/SeparatedConcerns.Tests/bin
+/SeparatedConcerns/SeparatedConcerns.Tests/obj
+/SeparatedConcerns/SeparatedConcerns.Database/SeparatedConcerns.Database.dbmdl
+/SeparatedConcerns/SeparatedConcerns.Database/SeparatedConcerns.Database.jfm
