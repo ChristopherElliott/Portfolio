@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/SeparatedConcerns/packages
+/SeparatedConcerns/SeparatedConcerns.Database/bin
+/SeparatedConcerns/SeparatedConcerns.Database/obj
+/SeparatedConcerns/SeparatedConcerns.Logic/obj
+/SeparatedConcerns/SeparatedConcerns.Repository/obj
+/SeparatedConcerns/SeparatedConcerns.Shared/obj
+/SeparatedConcerns/SeparatedConcerns.WebClient/bin
+/SeparatedConcerns/SeparatedConcerns.WebClient/obj
