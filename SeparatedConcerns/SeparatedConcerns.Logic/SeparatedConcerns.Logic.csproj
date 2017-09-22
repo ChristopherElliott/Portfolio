@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,7 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\PasswordHash.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SeparatedConcerns.Repository\SeparatedConcerns.Repository.csproj">
+      <Project>{e1e1e3da-e936-49e7-8dd9-843ac3cecf22}</Project>
+      <Name>SeparatedConcerns.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SeparatedConcerns.Shared\SeparatedConcerns.Shared.csproj">
+      <Project>{0c849c8a-7781-4660-a66e-996d5ea90ec9}</Project>
+      <Name>SeparatedConcerns.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
