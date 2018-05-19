@@ -7,7 +7,7 @@ matrix:
       script:
         - python -m unittest discover
 
-    - language: c#
+    - language: csharp
       solution: SeparatedConserns\SeparatedConserns.sln
 
     
