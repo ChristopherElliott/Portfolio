@@ -3,7 +3,7 @@ matrix:
     - language: python
       python: 3.6
       before_script:
-        - cd backend/tests
+        - cd python/tests
       script:
         - python -m unittest discover
 
