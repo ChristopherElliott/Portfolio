@@ -1,0 +1,17 @@
+matrix:
+  include:
+    - language: python
+      python: 3.6
+      before_script:
+        - cd backend/tests
+      script:
+        - python -m unittest discover
+
+    - language: c#
+      solution: SeparatedConserns\SeparatedConserns.sln
+
+    
+
+notifications:
+  email:
+    - mail@christopher-elliott.com
