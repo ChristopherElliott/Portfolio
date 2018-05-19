@@ -3,12 +3,12 @@ matrix:
     - language: python
       python: 3.6
       before_script:
-        - cd python/tests
+        - cd python
       script:
         - python -m unittest discover
 
     - language: csharp
-      solution: SeparatedConserns/SeparatedConserns.sln
+      solution: SeparatedConcerns/SeparatedConcerns.sln
 
     
 
