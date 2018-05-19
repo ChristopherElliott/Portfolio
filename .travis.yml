@@ -8,7 +8,7 @@ matrix:
         - python -m unittest discover
 
     - language: csharp
-      solution: SeparatedConserns\SeparatedConserns.sln
+      solution: SeparatedConserns/SeparatedConserns.sln
 
     
 
