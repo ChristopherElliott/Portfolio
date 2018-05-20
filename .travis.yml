@@ -7,8 +7,15 @@ matrix:
       script:
         - python -m unittest discover
 
-    - language: csharp
-      solution: SeparatedConcerns/SeparatedConcerns.sln
+    # - language: csharp
+    #   solution: SeparatedConcerns/SeparatedConcerns.sln
+
+    - language: ghc
+      before_script:
+        - cd haskell
+      script:
+        - cabal configure --enable-tests && cabal build && cabal test
+
 
     - language: rust
       before_script:
@@ -16,8 +23,3 @@ matrix:
       script:
         - cargo build --verbose --all
         - cargo test --verbose --all
-    
-
-notifications:
-  email:
-    - mail@christopher-elliott.com
