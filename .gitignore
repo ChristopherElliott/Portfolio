@@ -19,3 +19,8 @@
 /SeparatedConcerns/SeparatedConcerns.Database/SeparatedConcerns.Database.dbmdl
 /SeparatedConcerns/SeparatedConcerns.Database/SeparatedConcerns.Database.jfm
 SeparatedConcerns/.vs
+.vscode
+**/*.rs.bk
+Cargo.lock
+.cargo-lock
+Rust/target

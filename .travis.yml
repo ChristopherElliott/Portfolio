@@ -10,6 +10,12 @@ matrix:
     - language: csharp
       solution: SeparatedConcerns/SeparatedConcerns.sln
 
+    - language: rust
+      before_script:
+        - cd Rust
+      script:
+        - cargo build --verbose --all
+        - cargo test --verbose --all
     
 
 notifications:
