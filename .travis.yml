@@ -11,6 +11,8 @@ matrix:
     #   solution: SeparatedConcerns/SeparatedConcerns.sln
 
     - language: ghc
+      ghc:
+        - "8.2"
       before_script:
         - cd haskell
       script:
