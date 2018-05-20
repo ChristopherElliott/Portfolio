@@ -1,0 +1,6 @@
+[package]
+name = "systemutils"
+version = "0.1.0"
+authors = ["Christopher Elliott <mail@christopher-elliott.com>"]
+
+[dependencies]
