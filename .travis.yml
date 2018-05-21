@@ -10,21 +10,21 @@ matrix:
     # - language: csharp
     #   solution: SeparatedConcerns/SeparatedConcerns.sln
 
-    - language: ghc
-      ghc: 8.2.1
-        env: GHCVER='8.2.1' STACK_YAML="$PWD/stack-$GHCVER".yaml
-      addons:
-        apt:
-          sources:
-            - sourceline: 'ppa:hvr/ghc'
-          packages:
-            - libgmp-dev
-            - cabal-install-2.0    # required by declared GHC 8.x
-      before_script:
-        - cd haskell
-      script:
-        # - cabal install --only-dependencies --enable-tests
-        - cabal configure --enable-tests && cabal build && cabal test
+    # - language: ghc
+    #   ghc: 8.2.1
+    #     env: GHCVER='8.2.1' STACK_YAML="$PWD/stack-$GHCVER".yaml
+    #   addons:
+    #     apt:
+    #       sources:
+    #         - sourceline: 'ppa:hvr/ghc'
+    #       packages:
+    #         - libgmp-dev
+    #         - cabal-install-2.0    # required by declared GHC 8.x
+    #   before_script:
+    #     - cd haskell
+    #   script:
+    #     # - cabal install --only-dependencies --enable-tests
+    #     - cabal configure --enable-tests && cabal build && cabal test
 
     - language: rust
       before_script:
