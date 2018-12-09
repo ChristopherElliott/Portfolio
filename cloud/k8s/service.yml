@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: 2018-12-09T19:08:00Z
+  labels:
+    app: nginx-1
+  name: nginx-1-service
+  namespace: default
+  resourceVersion: "1237"
+  selfLink: /api/v1/namespaces/default/services/nginx-1-service
+  uid: beb1fe71-fbe5-11e8-8ea9-42010a8a0050
+spec:
+  clusterIP: 10.19.253.35
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 31952
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: nginx-1
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 35.247.121.212

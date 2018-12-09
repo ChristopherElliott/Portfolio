@@ -24,3 +24,5 @@ SeparatedConcerns/.vs
 Cargo.lock
 .cargo-lock
 Rust/target
+/obj/
+/bin/
