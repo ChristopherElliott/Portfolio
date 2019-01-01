@@ -5,7 +5,7 @@ using Microsoft.Quantum.Simulation.Simulators;
 
 namespace P2
 {
-    class Driver
+    class DriverApp
     {
         static void Main(string[] args)
         {
