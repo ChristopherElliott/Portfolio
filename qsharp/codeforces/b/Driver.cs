@@ -3,7 +3,7 @@
 using Microsoft.Quantum.Simulation.Core;
 using Microsoft.Quantum.Simulation.Simulators;
 
-namespace P2
+namespace Solution
 {
     class DriverApp
     {
