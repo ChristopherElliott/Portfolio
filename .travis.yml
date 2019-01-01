@@ -8,11 +8,11 @@ matrix:
         - python -m unittest discover
 
     - language: csharp
-      solution: SeparatedConcerns/SeparatedConcerns.sln
+      solution: csharp/SeparatedConcerns.sln
 
     - language: rust
       before_script:
-        - cd Rust
+        - cd rust
       script:
         - cargo build --verbose --all
         - cargo test --verbose --all
